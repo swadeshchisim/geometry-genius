@@ -24,19 +24,15 @@
                     <figure><img src="images/triangle.png" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Triangle</h2>
-                      <p>Area = 0.5 X b X h</p>
+                      <p class="text-center">Area = 0.5 X b X h</p>
                       <div>
-                        <div>
-                          <input type="text" placeholder="b">
-                          <span>cm</span>
-                        </div>
-                        <div>
-                          <input type="text" placeholder="b">
-                          <span>cm</span>
-                        </div>
+                        <input class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="b">
+                        <span>cm</span>
+                        <input class="w-24 text-2xl p-2 rounded-sm" type="text" placeholder="h">
+                        <span class="mr-4 ml-2">cm</span>
                       </div>
                       <div class="card-actions">
-                        <button class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -81,5 +77,9 @@
         </div>
     </main>
     <!-- main section ends here -->
+
+
+
+    <script src="scripts/triangle-calculate.js"></script>
 </body>
 </html>
