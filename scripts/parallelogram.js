@@ -15,4 +15,11 @@ function calculateParallelogramArea() {
     //display parallelogram area
     const parallelogramAreaSpan = document.getElementById('parallelogram-area');
     parallelogramAreaSpan.innerText = area;
+
+     // display in area calculator
+     const areaCalculator = document.getElementById('area-calculation');
+     areaCalculator.innerText = 'Parallelogram Area: ' + area;
+
+     baseInput.value = '';
+     heightInput.value = '';
 }

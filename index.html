@@ -32,7 +32,7 @@
                         <span class="mr-4 ml-2">cm</span>
                       </div>
                       <div>
-                        <p class="text-2xl">Area: <span id="triangle-area"></span><span>cm<sup>2</sup> </p>
+                        <p class="text-2xl">Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup> </p>
                       </div>
                       <div class="card-actions">
                         <button class="btn w-full text-xl bg-sky-600 text-white" onclick="calculateTriangleArea()">Calculate</button>
@@ -85,8 +85,17 @@
                     <div class="card-body text-center">
                       <h2 class="card-title">Rhombus</h2>
                       <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
-                      <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                      <div class="flex">
+                        <input id="diagonal-1" class="w-24 text-xl p-1" type="text" placeholder="d1">
+                        <span class="mr-4 ml-2">cm</span>
+                        <input id="diagonal-2" class="w-24 text-xl p-1" type="text" placeholder="d2">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area: <span id="rhombus-area">0</span> <span>cm</span><sup>2</sup></p>
+                      </div>
+                      <div class="card-actions">
+                        <button onclick="calculateRhombusArea()" class="btn w-full bg-sky-600 text-xl text-white">Calculate</button>
                       </div>
                     </div>
                 </div>
@@ -94,6 +103,7 @@
             <!-- area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-md">
                 <h3 class="text-3xl text-center">Area Caclulation</h3>
+                <p class="text-2xl text-center py-4"><span id="area-calculation">0</span> <span>cm</span><sup>2</sup></p>
             </div>
         </div>
     </main>
@@ -104,5 +114,6 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle.js"></script>
     <script src="scripts/parallelogram.js"></script>
+    <script src="scripts/rhombus.js"></script>
 </body>
 </html>

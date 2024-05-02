@@ -20,4 +20,8 @@ function calculateRectangleArea() {
 
     widthInput.value = '';
     lengthInput.value = '';
+
+     // display in area calculator
+     const areaCalculator = document.getElementById('area-calculation');
+     areaCalculator.innerText = 'Rectangle Area: ' + area;
 }
