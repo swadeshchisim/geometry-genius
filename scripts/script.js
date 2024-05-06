@@ -1,3 +1,4 @@
+// get input field id dynamically
 function getInputValueById(inputFieldId) {
     const inputField = document.getElementById(inputFieldId);
     const inputValueText = inputField.value;
@@ -6,6 +7,7 @@ function getInputValueById(inputFieldId) {
     return value;
 }
 
+// set inner text dynamically
 function setInnerTextById(elementId, area) {
     const element = document.getElementById(elementId);
     element.innerText = area;
