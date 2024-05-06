@@ -1,25 +1,15 @@
 function calculateRectangleArea() {
     //get width of the rectangle
-    const widthInput = document.getElementById('rectangle-width');
-    const widthText = widthInput.value;
-    const width = parseFloat(widthText);
+   const width = getInputValueById('rectangle-width');
 
     // get legnth of the rectangle
-    const lengthInput = document.getElementById('rectangle-length');
-    const lengthText = lengthInput.value;
-    const length = parseFloat(lengthText);
+    const length = getInputValueById('rectangle-length');
     
-
     // calculate rectangle area
     const area = width * length;
-    
 
     //display rectangle area
-    const reactangleAreaSpan = document.getElementById('rectangle-area');
-    reactangleAreaSpan.innerText = area;
-
-    widthInput.value = '';
-    lengthInput.value = '';
+    setInnerTextById('rectangle-area', area);
 
      // display in area calculator
      const areaCalculator = document.getElementById('area-calculation');
